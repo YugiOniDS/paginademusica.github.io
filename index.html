@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto de tarjetas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- MENÚ LATERAL IZQUIERDO (Con botones de filtro) -->
+  <aside class="sidebar" id="sidebar">
+    <h2>Canciones</h2>
+    <a href="#todas" class="activo" onclick="filtrar('todas', this); return false;">Todas</a>
+    <a href="#categoria1" onclick="filtrar('categoria1', this); return false;">Música en español</a>
+    <a href="#categoria2" onclick="filtrar('categoria2', this); return false;">Música en ingles</a>
+    <a href="#categoria3" onclick="filtrar('categoria3', this); return false;">Gustos culposos</a>
+  </aside>
+
+  <!-- CONTENIDO DERECHO -->
+  <div class="main-wrapper">
+    <header class="navbar">
+      <button class="btn-menu" onclick="document.getElementById('sidebar').classList.toggle('abierto')">☰ Menú</button>
+      <strong id="titulo-seccion">Todas las tarjetas</strong>
+      <span>2026</span>
+    </header>
+
+    <main class="contenido">
+      <section class="hero">
+        <h1>¡Bienvenido a mi proyecto!</h1>
+        <p>Primero selecciona una categoria y descubre que canciones me gustan ;D</p>
+      </section>
+
+      <!-- CUADRÍCULA DE TARJETAS -->
+      <section id="proyectos" class="grid">
+        
+        <div class="card categoria1">
+          <h3>Zoé</h3>
+          <p>Sólo - Rocanlover</p>
+          <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/76AWIRtgPkesqyXdiciXK5?utm_source=generator&si=6c5713fd5abd4edc" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <div class="card categoria2">
+          <h3>Nirvana</h3>
+          <p>Aneurysm - Incesticide</p>
+          <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0Pie5DFAHHxpkONFUsAI6s?utm_source=generator&si=12704aace2144654" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <div class="card categoria3">
+          <h3>Hatsune Miku</h3>
+          <p>World is mine - Ryo</p>
+          <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/29rRca4BXxuUCNmcCzHvtl?utm_source=generator&si=3d6c347f30164327" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <div class="card categoria1">
+          <h3>Zoé</h3>
+          <p>Mrs. Nitro - Memo rex commander y el corazón atómico de la vía lactea</p>
+          <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5p2kbPZjesaW0W1TDRzkYi?utm_source=generator&si=b4ff9ba5a26f4d9e" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <div class="card categoria2">
+            <h3>Nirvana</h3>
+            <p>About a girl - Bleach</p>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2SHTKB8YYlawTGIuJ2b2ok?utm_source=generator&si=034eb5b3ce854955" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <div class="card categoria3">
+            <h3>The living tombstone</h3>
+            <p>I can´t fix you - I can´t fix you</p>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3zAqapGmeTcDB4xES8LBUL?utm_source=generator&si=7b5e9ca417884c9c" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <div class="card categoria3">
+            <h3>ITownGameplay</h3>
+            <p>Freedy´s song - Freddy´s song</p>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4JIWBRMEYhfgLSkpH2cdxF?utm_source=generator&si=69bb155e1725484b" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <div class="card categoria2">
+            <h3>Nirvana</h3>
+            <p>Old Age - The Best On The Box</p>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7wIZrmX95HfzXEgZRZbNd5?utm_source=generator&si=34f2653758524cae" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <div class="card categoria1">
+            <h3>Aleks Syntek</h3>
+            <p>Te Soñe - Mundo Lite</p>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7odYiArHz46LerX6TlA4Se?utm_source=generator&si=1011c1fe49aa4470" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <div class="card categoria1">
+            <h3>Los Daniels<h3>
+            <p>Quisiera Saber - A casa</p>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7ETuZtnJJ1brMNiPpd2LFg?utm_source=generator&si=ccf3fa7ec3cf437f" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>    
+        </div>
+
+        <div class="card categoria3">
+            <h3>Shadrow</h3>
+            <p>Never Be Alone - Never Be alone</p>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3Mi2DxVPiT7j2EHdxOFCg3?utm_source=generator&si=d3f6cdfcc8d64f6d" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <div class="card categoria3">
+            <h3>Vete a la Versh</h3>
+            <p>Horrible - Balance Universal</p>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/052vZ9qIqUnhXz4i0Zbb5c?utm_source=generator&si=0c9a196ea13844d7" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <div class="card categoria1">
+            <h3>Aleks Syntek</h3>
+            <p>Por volverte a ver - De Noche En La Cuidad</p>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5mQAisM7QzOcAGwi9uSMIh?utm_source=generator&si=0a9eca6289d3441e" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <div class="card categoria2">
+            <h3>Green Day</h3>
+            <p>Boulevard Of Broken Dreams - American Idiot</p>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0U87auHx1iZTEFcq9KVdmO?utm_source=generator&si=e02904560d4a4696" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <div class="card categoria2">
+            <h3>Coldplay</h3>
+            <p>Shiver - Parachutes</p>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0qksx8mV28lztYIZ1om8ml?utm_source=generator&si=33c926e189de4e12" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <div class="card categoria3">
+            <h3>CheccosPio</h3>
+            <p>Around The World La La La La - Around The World La La La La</p>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/12ouLJoI4doMYZgE8LzgCN?utm_source=generator&si=d67a7d79c4804aa6" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <div class="card categoria1">
+            <h3>Zoé</h3>
+            <p>Últimos Dias - Reptilectric</p>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6S2UlwxfsDpR5yqKaVASMv?utm_source=generator&si=151005c1849f4901" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <div class="card categoria2">
+            <h3>David Bowie</h3>
+            <p>Starman - The Rise And Fall Of Ziggy Stardust And The Spiders From Mars</p>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0pQskrTITgmCMyr85tb9qq?utm_source=generator&si=4bcd080221084d62" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+      </section>
+    </main>
+  </div>
+
+  <!-- SCRIPT PARA FILTRAR DESDE LA BARRA LATERAL -->
+  <script>
+    function filtrar(categoria, enlace) {
+      // 1. Resalta la opción seleccionada en la barra izquierda
+      document.querySelectorAll('.sidebar a').forEach(a => a.classList.remove('activo'));
+      enlace.classList.add('activo');
+
+      // 2. Actualiza el título en la barra superior
+      document.getElementById('titulo-seccion').textContent = enlace.textContent;
+
+      // 3. Muestra solo las tarjetas de esa categoría
+      document.querySelectorAll('.card').forEach(tarjeta => {
+        if (categoria === 'todas' || tarjeta.classList.contains(categoria)) {
+          tarjeta.style.display = 'block';
+        } else {
+          tarjeta.style.display = 'none';
+        }
+      });
+
+      // 4. Cierra el menú automáticamente si estás en celular
+      document.getElementById('sidebar').classList.remove('abierto');
+    }
+  </script>
+
+</body>
+</html>
